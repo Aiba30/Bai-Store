@@ -1,0 +1,6 @@
+@use './reset.scss';
+@use './variable.scss';
+
+body{
+    background: var(--light);
+}
