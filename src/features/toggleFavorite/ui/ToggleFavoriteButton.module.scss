@@ -1,0 +1,17 @@
+.btn {
+  border: 1px solid var(--gray-dark);
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.activeBtn {
+  background: var(--gray-dark);
+  border: 1px solid var(--gray-dark);
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+}

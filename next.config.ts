@@ -6,18 +6,17 @@ const nextConfig: NextConfig = {
   swcMinify: true,
   webpack: config => {
     config.resolve.alias = {
-  ...config.resolve.alias,
-  '@app': path.resolve(__dirname, 'src/app'),
-  '@processes': path.resolve(__dirname, 'src/processes'),
-  '@widgets': path.resolve(__dirname, 'src/widgets'),
-  '@features': path.resolve(__dirname, 'src/features'),
-  '@entities': path.resolve(__dirname, 'src/entities'),
-  '@shared': path.resolve(__dirname, 'src/shared'),
-}
+      ...config.resolve.alias,
+      '@app': path.resolve(__dirname, 'src/app'),
+      '@processes': path.resolve(__dirname, 'src/processes'),
+      '@widgets': path.resolve(__dirname, 'src/widgets'),
+      '@features': path.resolve(__dirname, 'src/features'),
+      '@entities': path.resolve(__dirname, 'src/entities'),
+      '@shared': path.resolve(__dirname, 'src/shared'),
+    }
 
     return config
   },
 }
 
 export default nextConfig
-

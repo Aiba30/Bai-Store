@@ -1,0 +1,13 @@
+.addToCartBtn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  background: var(--osn);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  white-space: nowrap;
+  &:hover {
+    background: #0c5772;
+  }
+}
