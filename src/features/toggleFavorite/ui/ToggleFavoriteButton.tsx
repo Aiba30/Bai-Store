@@ -12,7 +12,7 @@ const ToggleFavoriteButton: FC<ToggleFavoriteButtonProps> = ({ productId }) => {
   }
   return (
     <button onClick={handleToggle} className={isFavorite ? classes.activeBtn : classes.btn}>
-      {isFavorite ? 'в избранном' : 'в избранное'}
+      {isFavorite ? 'В избранном' : 'В избранное'}
     </button>
   )
 }
