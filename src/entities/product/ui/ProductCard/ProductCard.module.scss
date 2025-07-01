@@ -1,0 +1,34 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 260px;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.imageWrap {
+  position: relative;
+  .badgesWrap {
+    display: flex;
+    gap: 9px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+  }
+}
+
+.pricesWrap,
+.btnsWrap {
+  display: flex;
+  gap: 12px;
+}
+
+.pricesWrap {
+  .oldPrice {
+    text-decoration: line-through;
+  }
+}

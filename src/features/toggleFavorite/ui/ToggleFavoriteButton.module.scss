@@ -1,0 +1,12 @@
+.btn {
+  border: 1px solid var(--gray-dark);
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.activeBtn {
+  background: var(--gray-dark);
+  border: 1px solid var(--gray-dark);
+  border-radius: 30px;
+  padding: 10px 20px;
+}

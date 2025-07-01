@@ -1,0 +1,8 @@
+.addToCartBtn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  background: var(--osn);
+  &:hover {
+    background: #0c5772;
+  }
+}

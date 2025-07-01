@@ -10,9 +10,11 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
     "next": "15.3.4",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -27,6 +29,7 @@
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-unused-imports": "^4.1.4",
     "prettier": "^3.6.2",
+    "sass": "^1.89.2",
     "typescript": "^5"
   }
 }
