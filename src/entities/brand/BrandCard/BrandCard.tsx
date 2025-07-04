@@ -5,7 +5,7 @@ import { brands } from '../mock'
 
 interface BrandCardProps {
   brandName: string
-  logo: StaticImageData
+  logo: StaticImageData | string
 }
 
 export const BrandCard: React.FC<BrandCardProps> = ({ brandName, logo }) => {

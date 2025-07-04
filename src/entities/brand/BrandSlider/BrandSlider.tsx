@@ -9,7 +9,7 @@ import { brands } from '../mock'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import Image from 'next/image'
-import yandex from '../../../../public/assets/icon/yandex.svg'
+import yandex from '/icons/yandex.svg'
 
 export const BrandSlider: React.FC = () => {
   const slides = []
@@ -47,7 +47,13 @@ export const BrandSlider: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <Image src={yandex} alt="yandex" width={122} height={47} className={styles.yandex} />
+        <Image
+          src={'/icons/yandex.svg'}
+          alt="yandex"
+          width={122}
+          height={47}
+          className={styles.yandex}
+        />
       </div>
     </div>
   )

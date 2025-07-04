@@ -1,18 +1,9 @@
 'use client'
-
 import React, { useState } from 'react'
 import styles from './AboUt.module.scss'
-import logo from './../../../public/assets/icon/logo.svg'
 import Image from 'next/image'
-import location from '../../../public/assets/icon/location.svg'
-import phone from '../../../public/assets/icon/mobile.svg'
-import telegram from '../../../public/assets/icon/telegram.svg'
-import instagram from '../../../public/assets/icon/instagram.svg'
-import youtube from '../../../public/assets/icon/youtube.svg'
-import shown from '../../../public/assets/icon/show.svg'
 export const About = () => {
   const [isExpanded, setIsExpanded] = useState(false)
-
   const toggleExpand = () => {
     setIsExpanded(!isExpanded)
   }
@@ -21,27 +12,27 @@ export const About = () => {
       <div className={styles.header}>
         <div className={styles.baiStoreContainer}>
           <div className={styles.baiStore}>
-            <Image src={logo} width={261} height={46} alt="logo" />
+            <Image src={'/icons/logo.svg'} width={261} height={46} alt="logo" />
             <div className={styles.contactInfo}>
               <div className={styles.iconContainer}>
-                <Image src={location} width={24} height={24} alt="location" />
+                <Image src={'/icons/location.svg'} width={24} height={24} alt="location" />
                 <p className={styles.address}>Борьков 8, Сторо́я горбушка</p>
               </div>
               <div className={styles.iconContainer}>
-                <Image src={phone} width={20} height={20} alt="phone" />
+                <Image src={'/icons/mobile.svg'} width={20} height={20} alt="phone" />
                 <p className={styles.phone}>+7 977 371-88-80</p>
               </div>
             </div>
             <button className={styles.feedbackButton}>Обратная связь</button>
             <div className={styles.messageContainer}>
               <a href="#">
-                <Image src={telegram} width={24} height={24} alt="telegram" />
+                <Image src={'/icons/telegram.svg'} width={24} height={24} alt="telegram" />
               </a>
               <a href="#">
-                <Image src={instagram} width={24} height={24} alt="instagram" />
+                <Image src={'/icons/instagram.svg'} width={24} height={24} alt="instagram" />
               </a>
               <a href="#">
-                <Image src={youtube} width={24} height={24} alt="youtube" />
+                <Image src={'/icons/youtube.svg'} width={24} height={24} alt="youtube" />
               </a>
             </div>
           </div>
@@ -79,7 +70,7 @@ export const About = () => {
             {isExpanded ? 'Скрыть' : 'Показать полностью'} {'   '}
             <Image
               className={styles.toggleIcon}
-              src={isExpanded ? telegram : shown}
+              src={isExpanded ? '/icons/telegram.svg' : '/icons/show.svg'}
               alt={isExpanded ? 'Скрыть' : 'Показать'}
               width={13}
               height={9}

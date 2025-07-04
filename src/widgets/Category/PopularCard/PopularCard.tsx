@@ -5,7 +5,7 @@ import { popular } from '../mock'
 
 interface PopularCard {
   brandName: string
-  logo: StaticImageData
+  logo: StaticImageData | string
 }
 
 export const PopularCard: React.FC<PopularCard> = ({ brandName, logo }) => {
