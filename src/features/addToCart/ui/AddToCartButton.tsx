@@ -2,7 +2,7 @@
 import { FC } from 'react'
 import classes from './AddToCartButton.module.scss'
 interface AddToCartButtonProps {
-  productId: string
+  productId: string | number
 }
 export const AddToCartButton: FC<AddToCartButtonProps> = ({ productId }) => {
   const handleClick = () => {

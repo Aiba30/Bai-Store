@@ -16,9 +16,12 @@ export const ProductCard: FC<ProductCardProps> = product => {
       </div>
       <p className={classes.name}>{product.name}</p>
       <h4 className={classes.title}>{product.title}</h4>
-      <div className={classes.pricesWrap}>
-        <p>{product.price} ₽</p>
-        {product.isDiscount && <p className={classes.oldPrice}>{product.oldPrice} ₽</p>}
+      <div className={classes.stockPriceWrap}>
+        {product.isInStock && <p className={classes.instock}>В наличии</p>}
+        <div className={classes.pricesWrap}>
+          <p>{product.price} ₽</p>
+          {product.isDiscount && <p className={classes.oldPrice}>{product.oldPrice} ₽</p>}
+        </div>
       </div>
       <div className={classes.btnsWrap}>
         <ToggleFavoriteButton productId={product.id} />

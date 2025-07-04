@@ -39,6 +39,26 @@
   cursor: pointer;
 }
 
+.stockPriceWrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  .instock {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #70ff63;
+      position: absolute;
+      top: 3px;
+      left: -10px;
+    }
+  }
+}
+
 .pricesWrap,
 .btnsWrap {
   display: flex;

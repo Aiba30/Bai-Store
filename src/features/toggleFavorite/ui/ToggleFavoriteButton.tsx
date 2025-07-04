@@ -2,7 +2,7 @@
 import { FC, useState } from 'react'
 import classes from './ToggleFavoriteButton.module.scss'
 interface ToggleFavoriteButtonProps {
-  productId: string
+  productId: string | number
 }
 export const ToggleFavoriteButton: FC<ToggleFavoriteButtonProps> = ({ productId }) => {
   const [isFavorite, setIsFavorite] = useState(false)
