@@ -1,0 +1,20 @@
+.badge {
+  border-radius: 30px;
+  padding: 10px;
+  max-width: 67px;
+  font-weight: 500;
+  font-size: 12px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.blue {
+  background: linear-gradient(180deg, rgba(0, 166, 227, 0.5) 0%, #3a0ca3 100%);
+}
+
+.sky {
+  background: linear-gradient(180deg, rgba(0, 166, 227, 0.5) 0%, #b3efff 100%);
+}

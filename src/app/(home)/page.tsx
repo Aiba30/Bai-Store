@@ -7,6 +7,7 @@ export default function Home() {
      <PopularSlide/>
       <BrandSlider /> 
       <About />
+      <h1 style={{ fontSize: '30px' }}>Main Page</h1>
     </>
   )
 }
