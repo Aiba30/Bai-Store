@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import classes from './ProductCard.module.scss'
-import Image from 'next/image'
 import { ToggleFavoriteButton } from '@features/toggleFavorite'
 import { AddToCartButton } from '@features/addToCart'
 import { ProductCardProps } from '@entities/product/model/types'

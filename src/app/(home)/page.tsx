@@ -1,5 +1,3 @@
-import { ProductCard } from '@entities/product'
-
 export default function Home() {
   return (
     <>
