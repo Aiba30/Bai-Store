@@ -1,3 +1,1 @@
-import ToggleFavoriteButton from './ToggleFavoriteButton'
-
-export default ToggleFavoriteButton
+export {ToggleFavoriteButton} from './ToggleFavoriteButton'

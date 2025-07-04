@@ -1,18 +1,19 @@
-import { ProductCardProps } from '@entities/product/model/types'
 import { FC } from 'react'
 import classes from './ProductCard.module.scss'
-import Badge from '@shared/ui/Badge'
-import AddToCartButton from '@features/addToCart/ui'
-import ToggleFavoriteButton from '@features/toggleFavorite/ui'
 import Image from 'next/image'
-const ProductCard: FC<ProductCardProps> = product => {
+import { ToggleFavoriteButton } from '@features/toggleFavorite'
+import { AddToCartButton } from '@features/addToCart'
+import { ProductCardProps } from '@entities/product/model/types'
+import { Badge, CardImageSlider } from '@shared/index'
+export const ProductCard: FC<ProductCardProps> = product => {
   return (
     <div className={classes.productCard}>
       <div className={classes.imageWrap}>
         <div className={classes.badgesWrap}>
-          <Badge variant="blue">New</Badge>
+          {product.isDiscount && <Badge variant="sky">Акция</Badge>}
+          {product.isNew && <Badge variant="blue">Новинка</Badge>}
         </div>
-        <Image src={product.image} alt={product.title} width={240} height={213} priority />
+        <CardImageSlider images={product.images} />
       </div>
       <p className={classes.name}>{product.name}</p>
       <h4 className={classes.title}>{product.title}</h4>
@@ -27,5 +28,3 @@ const ProductCard: FC<ProductCardProps> = product => {
     </div>
   )
 }
-
-export default ProductCard
