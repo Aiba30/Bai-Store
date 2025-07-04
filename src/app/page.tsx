@@ -1,7 +1,12 @@
-import { About } from "@widgets/AboUt/AboUt";
-
+import { BrandSlider } from '@entities/brand/BrandSlider/BrandSlider'
+import { PopularSlide } from '@entities/Popular/PopularSlide/PopularSlide'
+import { About } from '@widgets/AboUt/AboUt'
 export default function Home() {
-  return <>
-  <About/>
-  </>
+  return (
+    <>
+     <PopularSlide/>
+      <BrandSlider /> 
+      <About />
+    </>
+  )
 }

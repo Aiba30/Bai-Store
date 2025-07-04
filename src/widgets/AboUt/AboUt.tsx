@@ -19,41 +19,34 @@ export const About = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <div className={styles.baiStore}>
-          <Image src={logo} width={261} height={46} alt="logo" />
-          <div className={styles.contactInfo}>
-            <div className={styles.iconContainer}>
-              <Image src={location} width={24} height={24} alt="location" />
-              <p className={styles.address}>Борьков 8, Сторо́я горбушка</p>
+        <div className={styles.baiStoreContainer}>
+          <div className={styles.baiStore}>
+            <Image src={logo} width={261} height={46} alt="logo" />
+            <div className={styles.contactInfo}>
+              <div className={styles.iconContainer}>
+                <Image src={location} width={24} height={24} alt="location" />
+                <p className={styles.address}>Борьков 8, Сторо́я горбушка</p>
+              </div>
+              <div className={styles.iconContainer}>
+                <Image src={phone} width={20} height={20} alt="phone" />
+                <p className={styles.phone}>+7 977 371-88-80</p>
+              </div>
             </div>
-            <div className={styles.iconContainer}>
-              <Image src={phone} width={20} height={20} alt="phone" />
-              <p className={styles.phone}>+7 977 371-88-80</p>
+            <button className={styles.feedbackButton}>Обратная связь</button>
+            <div className={styles.messageContainer}>
+              <a href="#">
+                <Image src={telegram} width={24} height={24} alt="telegram" />
+              </a>
+              <a href="#">
+                <Image src={instagram} width={24} height={24} alt="instagram" />
+              </a>
+              <a href="#">
+                <Image src={youtube} width={24} height={24} alt="youtube" />
+              </a>
             </div>
-          </div>
-          <button className={styles.feedbackButton}>Обратная связь</button>
-          <div className={styles.messageContainer}>
-            <a href="#">
-              <Image src={telegram} width={24} height={24} alt="telegram" />
-            </a>
-            <a href="#">
-              <Image src={instagram} width={24} height={24} alt="instagram" />
-            </a>
-            <a href="#">
-              <Image src={youtube} width={24} height={24} alt="youtube" />
-            </a>
           </div>
         </div>
 
-        {/* <div className={styles.aboutSection}>
-          <h2 className={styles.aboutTitle}>О НАС:</h2>
-          <p className={styles.aboutText}>
-            Наша техника варит кофе, гладит рубашки, готовит вкусный ужин и делает уборку за вас. А
-            вместе с этим — вы найдёте у нас пледы, подушки, посуду и ещё много приятных мелочей.
-            Тысячи довольных клиентов уже выбрали нас за надёжность, выгодные цены и тёплый сервис.
-            Попробуйте и вы — делеем ваш быт проще и приятнее каждый день!
-          </p>
-        </div> */}
         <div className={styles.aboutSection}>
           <h2 className={styles.aboutTitle}>О НАС:</h2>
           <p className={styles.aboutText}>
@@ -83,8 +76,9 @@ export const About = () => {
           )}
 
           <button onClick={toggleExpand} className={styles.toggleButton}>
-            {isExpanded ? 'Скрыть' : 'Показать полностью'} {'  '}
+            {isExpanded ? 'Скрыть' : 'Показать полностью'} {'   '}
             <Image
+              className={styles.toggleIcon}
               src={isExpanded ? telegram : shown}
               alt={isExpanded ? 'Скрыть' : 'Показать'}
               width={13}
