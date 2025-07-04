@@ -1,5 +1,5 @@
 export interface ProductCardProps {
-  id: string
+  id: string | number
   name: string
   title: string
   category: string
@@ -8,4 +8,6 @@ export interface ProductCardProps {
   images: string[]
   isNew?: boolean
   isDiscount?: boolean
+  isInStock: boolean
+  isFavorite?: boolean
 }
