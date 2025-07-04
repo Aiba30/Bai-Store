@@ -4,7 +4,7 @@ import classes from './AddToCartButton.module.scss'
 interface AddToCartButtonProps {
   productId: string
 }
-const AddToCartButton: FC<AddToCartButtonProps> = ({ productId }) => {
+export const AddToCartButton: FC<AddToCartButtonProps> = ({ productId }) => {
   const handleClick = () => {
     console.log(productId)
   }
@@ -14,5 +14,3 @@ const AddToCartButton: FC<AddToCartButtonProps> = ({ productId }) => {
     </button>
   )
 }
-
-export default AddToCartButton

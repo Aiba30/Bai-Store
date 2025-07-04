@@ -27,12 +27,14 @@
 
 .imageWrap {
   position: relative;
+  max-width: 240px;
   .badgesWrap {
     display: flex;
     gap: 9px;
     position: absolute;
     top: 6px;
     left: 6px;
+    z-index: 5;
   }
   cursor: pointer;
 }
