@@ -1,0 +1,154 @@
+.sliderContainer {
+  padding: 20px 0 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sectionTitle {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  text-align: start;
+  margin-bottom: 24px;
+  padding-left: 18px;
+  margin-top: 40px;
+}
+
+.swiperWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  padding: 10px 0;
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.brandsGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding: 0 20px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+:global(.swiper-pagination) {
+  position: static !important;
+  margin-top: 44px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 30px;
+  background-color: #dbe0e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+:global(.swiper-pagination-bullet) {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+:global(.swiper-pagination-bullet::before) {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a0a0a0;
+  display: block;
+  transition:
+    background 0.3s,
+    transform 0.3s;
+}
+
+:global(.swiper-pagination-bullet-active::before) {
+  background: #ffffff;
+  transform: scale(1.2);
+}
+
+:global(.swiper-pagination) {
+  height: 24px;
+  padding: 8px;
+  border-radius: 30px;
+  background-color: #dbe0e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 10%;
+}
+
+:global(.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-horizontal) {
+  width: 44px !important;
+  margin: 44px auto 0 !important;
+
+  left: 50%;
+  width: 44px !important;
+  top: 20px !important;
+  left: 50%;
+}
+
+.yandex {
+  padding-left: 18px;
+}
+
+@media (max-width: 1280px) {
+  .brandsGrid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .brandsGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brandsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brandsGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}

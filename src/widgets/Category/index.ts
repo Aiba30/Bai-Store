@@ -1,0 +1,1 @@
+export {PopularSlide} from './PopularSlide/PopularSlide'
