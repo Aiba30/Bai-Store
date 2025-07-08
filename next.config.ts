@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
       '@features': path.resolve(__dirname, 'src/features'),
       '@entities': path.resolve(__dirname, 'src/entities'),
       '@shared': path.resolve(__dirname, 'src/shared'),
+      '#public': path.resolve(__dirname, 'public'),
+
     }
 
     return config

@@ -1,2 +1,2 @@
-export * from './ui/ProductCard'
-export * from './model/types'
+export {ProductCard} from './ui/ProductCard'
+export type {ProductCardProps} from './model/types'

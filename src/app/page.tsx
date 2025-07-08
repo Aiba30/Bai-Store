@@ -1,18 +1,19 @@
-import { ProductCardProps } from '@entities/product'
-import ProductCard from '@entities/product/ui/ProductCard'
-const product = {
-  id: 'fdfsdf',
-  name: 'Iphone',
-  title: 'Iphone dslfdslfkmdlflafdklf dfdfwfwffsfd',
-  price: 1000,
-  image: '/images/Карусель on drag.jpg',
-  category: 'phones',
-}
+import { Footer } from '@shared/ui/Footer'
+import { PopularSlide } from '@widgets/сategory'
+import { BrandSlider } from '@entities/brand'
+import { MainBanner } from '@widgets/mainBanner'
+import { About } from '@widgets/aboUt'
+import { AdvantagesSlider } from '@widgets/advantages'
 
 export default function Home() {
   return (
     <>
-      <ProductCard {...product} />
+      <MainBanner />
+      <PopularSlide />
+      <BrandSlider />
+      <AdvantagesSlider />
+      <About />
+      <Footer />
     </>
   )
 }

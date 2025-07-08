@@ -1,2 +1,2 @@
-export * from './toggleFavorite'
-export * from './addToCart'
+export {AddToCartButton} from './addToCart'
+export {ToggleFavoriteButton} from './toggleFavorite'

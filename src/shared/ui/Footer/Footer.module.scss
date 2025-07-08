@@ -1,0 +1,277 @@
+.footer {
+  background-color: #4b5667;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  padding-top: 40px;
+}
+
+.address,
+.phone {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+
+.topSection {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  gap: 79px;
+}
+
+.storeInfo {
+  flex: 0 0 300px;
+}
+
+.storeName {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.feedbackButton {
+  border-radius: 30px;
+  padding: 10px 20px;
+  height: 37px;
+  background-color: #00a6e3;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  min-width: 261px;
+  width: 100%;
+}
+
+.feedbackButton:hover {
+  background-color: #0c5772;
+}
+
+.menuColumns {
+  display: flex;
+  flex: 1;
+  gap: 40px;
+}
+
+.columnTitle {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #fff;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.baiStore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.liTitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bottomSection {
+  border-top: 1px solid #eaeaea;
+  padding-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #666;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.socialLinks a {
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.messageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 25px;
+}
+
+.baiStoreContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+#apple {
+  padding-top: 30px;
+  max-width: 228px;
+  width: 100%;
+}
+
+#serch {
+  max-width: 258px;
+  width: 100%;
+  padding-top: 5px;
+}
+
+#mobile {
+  padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .topSection {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .menuColumns {
+    flex-wrap: wrap;
+  }
+
+  .menuColumn {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .bottomSection {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .topSection {
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .menuColumns {
+    gap: 20px;
+  }
+
+  .storeInfo {
+    flex: 0 0 250px;
+  }
+
+  .feedbackButton {
+    min-width: 220px;
+  }
+
+  .menuList {
+    gap: 8px;
+  }
+
+  .liTitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 961px) {
+  .topSection {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .menuColumns {
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .menuColumn {
+    flex: 0 0 calc(33.333% - 20px);
+    min-width: 200px;
+  }
+
+  .storeInfo {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactInfo {
+    align-items: center;
+  }
+
+  .feedbackButton {
+    max-width: 261px;
+  }
+
+  .baiStore {
+    gap: 15px;
+  }
+
+  .messageContainer {
+    padding-top: 15px;
+  }
+
+  .columnTitle,
+  .liTitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .menuColumn {
+    flex: 0 0 calc(50% - 15px);
+  }
+
+  .columnTitle,
+  .liTitle {
+    font-size: 16px;
+  }
+}

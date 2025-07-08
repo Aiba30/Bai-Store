@@ -1,0 +1,322 @@
+.sliderSection {
+  padding: 40px 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  text-align: flex-start;
+  padding-bottom: 24px;
+}
+
+.swiperContainer {
+  padding: 0 0 40px;
+}
+
+.slide {
+  height: auto;
+  width: 100%;
+}
+
+.slideContent {
+  display: flex;
+  flex-direction: row;
+  gap: 42px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  border-radius: 30px;
+  width: 599px;
+  height: 212px;
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  object-fit: contain;
+  border-radius: 30px;
+}
+
+.orderButton {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #fff;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  width: 148px;
+  height: 37px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--osn);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  width: 9px !important;
+  height: 14px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  &::after {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.customNextButton,
+.customPrevButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 35px;
+  border: 1px solid #fff;
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    font-size: 18px;
+    width: 38px;
+    height: 39px;
+  }
+}
+
+.customNextButton {
+  right: 100px;
+}
+
+.customPrevButton {
+  left: 100px;
+}
+
+.navButtons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+
+  &.visible {
+    .prevButton {
+      left: 10px;
+    }
+    .nextButton {
+      right: 10px;
+    }
+  }
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 30%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 35px;
+  width: 38px;
+  height: 40px;
+  border: 1px solid #fff;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.arrow {
+  width: 17px;
+  height: 29px;
+  font-size: 19px;
+  line-height: 1;
+  stroke-width: 2px;
+}
+.prevButton {
+  left: -100px;
+}
+
+.nextButton {
+  right: -100px;
+}
+
+.customPagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 30px;
+  padding: 8px;
+  min-width: 64px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.05);
+  gap: 6px;
+  width: 100%;
+}
+
+.customPagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #0066ff;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+}
+
+.customPagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.3);
+  background-color: #0066ff;
+}
+
+@media (max-width: 1142px) {
+  .orderButton {
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 912px) {
+  .orderButton {
+    bottom: 60px;
+    left: 10px;
+    width: 138px;
+    height: 25px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 705px) {
+  .orderButton {
+    bottom: 65px;
+    left: 10px;
+    width: 128px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 10px;
+  }
+  .sectionTitle {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 624px) {
+  .orderButton {
+    width: 108px;
+    height: 20px;
+    gap: 0px;
+  }
+}
+
+@media (max-width: 585px) {
+  .orderButton {
+    bottom: 70px;
+    width: 95px;
+    height: 15px;
+    gap: 0px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 536px) {
+  .slideContent {
+    flex-direction: column;
+    gap: 0px;
+    padding: 0;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .imageContainer {
+    min-height: 180px;
+  }
+
+  .orderButton {
+    bottom: 40px;
+    left: 20px;
+    width: 128px;
+    height: 27px;
+    font-size: 12px;
+    padding: 8px 8px;
+    gap: 8px;
+
+    & img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+@media (max-width: 465px) {
+  .slideContent {
+    flex-direction: column;
+    gap: 0px;
+    padding: 0;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+  }
+
+  .imageContainer {
+    min-height: 160px;
+  }
+
+  .orderButton {
+    bottom: 30px;
+    left: 16px;
+    width: 118px;
+    height: 25px;
+    font-size: 11px;
+    padding: 6px 8px;
+    gap: 6px;
+  }
+
+  .prevButton,
+  .nextButton {
+    display: none;
+  }
+}
+
+@media (max-width: 357px) {
+  .orderButton {
+    bottom: 40px;
+  }
+}
