@@ -1,0 +1,28 @@
+.menuBar {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+
+  a {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    &:hover .label {
+      color: var(--osn);
+    }
+
+    .label {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      text-align: center;
+      color: #000;
+    }
+  }
+
+  &__icon{
+    width: 24px;
+    height: 24px;
+  }
+}
