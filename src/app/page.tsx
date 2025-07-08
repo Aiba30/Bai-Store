@@ -1,8 +1,9 @@
-import { About } from '@widgets/AboUt/AboUt'
 import { Footer } from '@shared/ui/Footer'
-import { PopularSlide } from '@widgets/Category'
+import { PopularSlide } from '@widgets/сategory'
 import { BrandSlider } from '@entities/brand'
-import { MainBanner } from '@widgets/MainBanner'
+import { MainBanner } from '@widgets/mainBanner'
+import { About } from '@widgets/aboUt'
+import { AdvantagesSlider } from '@widgets/advantages'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <MainBanner />
       <PopularSlide />
       <BrandSlider />
+      <AdvantagesSlider />
       <About />
       <Footer />
     </>

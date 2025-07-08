@@ -1,6 +1,6 @@
 import { BrandSlider } from '@entities/brand/BrandSlider/BrandSlider'
-import { PopularSlide } from '@widgets/Category/PopularSlide/PopularSlide'
-import { About } from '@widgets/AboUt/AboUt'
+import { PopularSlide } from '@widgets/сategory/PopularSlide/PopularSlide'
+import { About } from '@widgets/aboUt/AboUt'
 import { ProductCard, ProductCardProps } from '@entities/product'
 
 const product: ProductCardProps = {
