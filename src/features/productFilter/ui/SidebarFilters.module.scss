@@ -1,0 +1,78 @@
+.sidebar {
+  width: 261px;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.block {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.priceInputs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+
+  input {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+}
+
+.list,
+.priceList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 6px;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      color: #000;
+      input[type='checkbox'] {
+        accent-color: #007bff;
+      }
+    }
+  }
+}
+
+.blockHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--gray-dark);
+  padding: 10px 0px;
+}
+
+.toggle,
+.staticPlus {
+  font-size: 22px;
+  font-weight: 400;
+  user-select: none;
+  color: var(--gray-dark);
+}
+.staticPlus {
+  cursor: default;
+}

@@ -4,7 +4,7 @@ import { BrandSlider } from '@entities/brand'
 import { MainBanner } from '@widgets/mainBanner'
 import { About } from '@widgets/aboUt'
 import { AdvantagesSlider } from '@widgets/advantages'
-
+import { SidebarFilters } from '@features/productFilter'
 export default function Home() {
   return (
     <>
