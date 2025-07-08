@@ -8,6 +8,7 @@ const product = {
   image: '/images/Карусель on drag.jpg',
   category: 'phones',
 }
+
 export default function Home() {
   return (
     <>
