@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import styles from './Footer.module.scss'
+import Link from 'next/link'
 
 export const Footer = () => {
   return (
@@ -36,7 +37,9 @@ export const Footer = () => {
 
         <div className={styles.menuColumns}>
           <div className={styles.menuColumn}>
-            <h3 className={styles.columnTitle}>Каталог</h3>
+            <Link href="/catalog" >
+              <h3 className={styles.columnTitle}>Каталог</h3>
+            </Link>
             <ul className={styles.menuList}>
               <li className={styles.liTitle}>Смартфоны</li>
               <li className={styles.liTitle}>Планшеты</li>
